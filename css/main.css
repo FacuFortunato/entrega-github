@@ -174,46 +174,6 @@ aside{
 }
 
 
-/*estilos servicio.html*/
-.contenedor-servicio .banner{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
-}
-.banner img{
-    height: 200px;
-    width: 500px;
-}
-
-main div div{
-    margin: 50px;
-}
-
-
-.info{
-    margin: 100px 10px;
-    background-color: #002B5B;
-}
-.info div{
-    margin: 100px;
-    padding-bottom: 20px;
-}
-
-
-
-.formulario{
-    margin: 10px;
-    border: 1px solid black;
-    align-content: center;
-}
-h5{
-    font-size: 20px;
-}
-
-
-
-
-
 
 
 
@@ -274,12 +234,6 @@ h5{
     }
 
 
-
-    /*estilos servicio*/
-
-    .formulario{
-        margin: 200px 50px;
-    }
 }
 
 
@@ -357,48 +311,6 @@ h5{
     footer{
         width: 100%;
         font-size: 20px;
-    }
-
-
-    /*estilos servicio*/
-    
-    .banner{
-        margin-left: 450px;
-    }
-    .banner img{
-        width: 100vw;
-    } 
-
-    .contenedor-servicio{
-        display: grid;
-        grid-template-columns: 0.3fr 3fr;
-        grid-template-areas: 
-        "nav main"
-        "nav main"
-        "formulario formulario"
-        "cajas cajas";
-    
-    
-    }
-
-
-
-    .info{
-        width: 750px;
-        margin-left: 375px;
-    }
-
-    .formulario{
-        width: 750px;
-        display: grid;
-        grid-area: formulario;
-        margin-left: 550px;
-    }
-    .nav-servicio nav{
-        width: 150px;
-        height: 450px;
-        display: grid;
-        grid-area: nav;
     }
 
 
