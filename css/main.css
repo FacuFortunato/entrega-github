@@ -33,6 +33,9 @@ header{
     margin-top: 10px;
 }
 
+.sonic{
+    display: none;
+}
 
 
 /*footer*/
@@ -323,6 +326,7 @@ h5{
 
 
     section nav{
+        margin: 10px;
         height: 450px;
         display: grid;
         grid-area: nav;
@@ -374,7 +378,10 @@ h5{
         "formulario formulario"
         "cajas cajas";
     
+    
     }
+
+
 
     .info{
         width: 750px;
@@ -392,6 +399,18 @@ h5{
         height: 450px;
         display: grid;
         grid-area: nav;
+    }
+
+
+    .sonic{
+        display: inline;
+        margin: 100px;
+        height: 250px;
+        width: 250px;
+    }
+    .sonic img{
+        width: 100%;
+        height: 100%;
     }
 
     /*propiedades transform*/
@@ -418,6 +437,22 @@ h5{
     }
     .cajas div img:hover{
         transform: scale(1.2);
+    }
+    .escalar{
+        animation-name: escalar;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes escalar {
+        from{
+            transform: scale(0);
+        }
+
+        to{
+            transform: scale(1.5);
+        }
     }
 }
 
