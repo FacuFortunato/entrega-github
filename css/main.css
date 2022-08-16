@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*estilos index*/
+
+/*body*/
+body{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: rgb(204, 209, 209);
+}
+
+/*header*/
+header{
+    margin: 10px;
+    padding: 20px;
+    background-color: #002B5B;
+    text-align: center;
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+}
+.menu li{
+    margin: auto;
+    list-style-type: none;   
+}
+.menu li img{
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+}
+
+
+
+/*footer*/
+footer{
+    margin:0 10px 0 10px;
+    padding-left: 25px;
+    width: auto;
+    height: 200px;
+    text-align: center;
+    background-color: #002B5B; 
+    font-size: 15px;
+}
+footer div{
+    margin: 20px 0px;
+}
+footer ul{
+    list-style-type: none;
+}
+footer div img{
+    margin-bottom: 0;
+    height: 20px;
+    width: 20px;
+}
+
+/*contenedor*/
+.contenedor{
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+    "productos-1 productos-1"
+    "productos-2 productos-2"
+    "cajas cajas"
+    ;
+}
+
+main h3{
+    margin-top: 100px;
+}
+
+/*productos*/
+.productos-1{
+    margin: 100px 0;
+    display: grid;
+    grid-area: productos-1;
+    padding: 10px;
+}
+.productos-1 div{
+    display: flex;
+    flex-flow: column wrap;
+    
+}
+.productos-1 div span{
+    margin: auto;
+}
+.productos-1 div button{
+    height: 20px;
+    width: 100px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.productos-1 div img{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    position: relative;   
+}
+
+.productos-2{
+    margin: 100px 0;
+    display: grid;
+    grid-area: productos-2;  
+    padding: 10px; 
+}
+.productos-2 div{
+    display: flex;
+    flex-flow: column wrap;
+}
+.productos-2 div span{
+    margin: auto;
+}
+.productos-2 div button{
+    height: 20px;
+    width: 100px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.productos-2 div img{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    position: relative;   
+}
+/*banner*/
+aside{
+    display: none;
+} 
+
+
+
+
+/*cajas*/
+.cajas{
+    margin-top: 50px;
+    margin-bottom: 200px;
+    height: 250px;
+    width: 350px;
+    display: grid;
+    grid-area: cajas;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgba(255, 255, 255, 0.308);
+    border: 1px solid black;
+    justify-self: center;
+}
+.cajas div{
+    margin: 15px;
+    padding-top: 15px;
+    border: 1px solid black;
+}
+.cajas div img{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: relative;  
+}
+
+
+
+/*none*/
+section nav{
+    display: none;
+}
+aside{
+    display: none;
+}
+
+
+/*estilos servicio.html*/
+.contenedor-servicio .banner{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.banner img{
+    height: 200px;
+    width: 500px;
+}
+
+main div div{
+    margin: 50px;
+}
+
+
+.info{
+    margin: 100px 10px;
+    background-color: #002B5B;
+}
+.info div{
+    margin: 100px;
+    padding-bottom: 20px;
+}
+
+
+
+.formulario{
+    margin: 10px;
+    border: 1px solid black;
+    align-content: center;
+}
+h5{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/*estilos media queries*/
+@media screen and (min-width:400px){
+    .contenedor{
+        grid-template-areas: 
+        "productos-1 productos-1 productos-1"
+        "banner banner banner"
+        "productos-2 productos-2 productos-2"
+        "cajas cajas cajas cajas"
+        ;
+    }
+
+    .productos-1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 700px;
+    }
+    .productos-1 div{
+        box-shadow: 2px 4px 6px;
+    }
+    .productos-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 700px;
+    }
+    .productos-2 div{
+        box-shadow: 2px 4px 6px;
+    }
+    
+    /*aside*/
+    aside{
+        display: grid;
+        grid-area: banner;
+        width: 100%;
+    }
+    aside img{
+        height: 200px;
+        width: 500px;
+    } 
+    
+    footer{
+        width: auto;
+    
+    }
+    footer ul, div{
+        font-size: 20px;
+    }
+
+    
+    .cajas{
+        height: 500px;
+        width: 450px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+    /*estilos servicio*/
+
+    .formulario{
+        margin: 200px 50px;
+    }
+}
+
+
+@media screen and (min-width:600px){
+    /*cajas*/
+    .cajas{
+        height: 500px;
+        width: 600px;
+        margin-left: 100px;
+        grid-template-columns: 1fr;
+    } 
+
+    .banner img{
+        margin-left: 200px ;
+        height: 200px;
+        max-width: 600px;
+    } 
+}
+
+
+
+@media screen and (min-width:1024px) {
+    /*estilos index*/
+    .contenedor{
+        grid-template-areas: 
+        "nav productos-1 productos-1"
+        "nav banner banner"
+        "nav productos-2 productos-2"
+        "cajas cajas cajas"
+        ;
+    }
+
+    .productos-1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 700px;
+    }
+    .productos-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 700px;
+    }
+
+
+
+    section nav{
+        height: 450px;
+        display: grid;
+        grid-area: nav;
+        background-color: #85929E;
+    }
+    section nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    section nav ul li{
+        padding-top: 0;
+        list-style-type: none;
+    }
+
+    /*cajas*/
+    .cajas{
+        width: 850px;
+    }
+
+
+    /*aside*/
+    aside img{
+        height: 200px;
+        width: 700px;
+    } 
+
+    /*footer*/
+    footer{
+        width: 100%;
+        font-size: 20px;
+    }
+
+
+    /*estilos servicio*/
+    
+    .banner{
+        margin-left: 450px;
+    }
+    .banner img{
+        width: 100vw;
+    } 
+
+    .contenedor-servicio{
+        display: grid;
+        grid-template-columns: 0.3fr 3fr;
+        grid-template-areas: 
+        "nav main"
+        "nav main"
+        "formulario formulario"
+        "cajas cajas";
+    
+    }
+
+    .info{
+        width: 750px;
+        margin-left: 375px;
+    }
+
+    .formulario{
+        width: 750px;
+        display: grid;
+        grid-area: formulario;
+        margin-left: 550px;
+    }
+    .nav-servicio nav{
+        width: 150px;
+        height: 450px;
+        display: grid;
+        grid-area: nav;
+    }
+
+    /*propiedades transform*/
+    main div div img{
+        transition: 2s;
+    }   
+    main div div img:hover{
+        transform: scale(1.2);
+    }
+    main div div button:hover{
+        transform: scale(0.9);
+    }
+    nav ul li:hover{
+        transform: scale(0.9);
+    }
+    main div div button:hover{
+        transform: scale(0.9);
+    }
+    header nav ul li:hover{
+        transform: scale(0.9);
+    }
+    .cajas div img{
+        transition: 2s;
+    }
+    .cajas div img:hover{
+        transform: scale(1.2);
+    }
+}
+
+
+
